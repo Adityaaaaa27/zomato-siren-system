@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Download, Search, X, Flag } from "lucide-react";
 import { BarChart, Bar, XAxis, ResponsiveContainer, LineChart, Line, Tooltip } from "recharts";
-import { merchants } from "../../lib/mock-data";
+import { merchants } from "../lib/mock-data";
 
 export const Route = createFileRoute("/_app/merchant-management")({
   component: MerchantManagementPage,

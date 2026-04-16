@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { AlertTriangle, TrendingUp, TrendingDown, CheckCircle, AlertCircle } from "lucide-react";
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip } from "recharts";
-import { dashboardSummary, kptTrendData, liveOrders } from "../../lib/mock-data";
+import { dashboardSummary, kptTrendData, liveOrders } from "../lib/mock-data";
 
 export const Route = createFileRoute("/_app/dashboard")({
   component: DashboardPage,

@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, LineChart, Line, Tooltip } from "recharts";
-import { signalQualityData } from "../../lib/mock-data";
+import { signalQualityData } from "../lib/mock-data";
 import { Zap, CloudRain } from "lucide-react";
 
 export const Route = createFileRoute("/_app/signal-quality")({

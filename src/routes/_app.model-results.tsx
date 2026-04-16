@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, ScatterChart, Scatter, Tooltip, Line, LineChart, CartesianGrid, ReferenceLine } from "recharts";
-import { modelResults } from "../../lib/mock-data";
+import { modelResults } from "../lib/mock-data";
 
 export const Route = createFileRoute("/_app/model-results")({
   component: ModelResultsPage,
