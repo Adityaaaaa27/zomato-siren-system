@@ -153,11 +153,7 @@ function SignalQualityPage() {
                 <BarChart data={layer3.biasDistribution}>
                   <XAxis dataKey="range" tickLine={false} axisLine={false} tick={{ fontSize: 10, fill: "var(--color-muted-foreground)" }} />
                   <YAxis hide />
-                  <Bar dataKey="value" fill="var(--color-muted)" radius={[3, 3, 0, 0]} barSize={28}>
-                    {layer3.biasDistribution.map((entry, index) => (
-                      <Bar key={index} dataKey="value" fill={entry.range === "0" ? "var(--color-primary)" : "var(--color-muted)"} />
-                    ))}
-                  </Bar>
+                  <Bar dataKey="value" fill="var(--color-muted)" radius={[3, 3, 0, 0]} barSize={28} />
                 </BarChart>
               </ResponsiveContainer>
             </div>
