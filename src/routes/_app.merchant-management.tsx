@@ -70,7 +70,7 @@ function MerchantManagementPage() {
               </tr>
             </thead>
             <tbody>
-              {merchants.map((m) => (
+              {merchants.map((m: typeof merchants[0]) => (
                 <tr
                   key={m.id}
                   onClick={() => setSelected(m)}

@@ -131,7 +131,7 @@ function SignalQualityPage() {
               </div>
             </div>
             <div className="space-y-2">
-              {layer3.behaviors.map((b) => (
+              {layer3.behaviors.map((b: typeof layer3.behaviors[0]) => (
                 <div key={b.name} className="flex items-center justify-between text-sm">
                   <div className="flex items-center gap-2">
                     <span className="h-2.5 w-2.5 rounded-full" style={{ backgroundColor: b.color }} />

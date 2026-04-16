@@ -125,7 +125,7 @@ function DashboardPage() {
             </tr>
           </thead>
           <tbody>
-            {liveOrders.map((order) => (
+            {liveOrders.map((order: typeof liveOrders[0]) => (
               <tr key={order.id} className="border-t border-border/50">
                 <td className="py-4 text-sm font-bold font-display">{order.id}</td>
                 <td className="py-4">

@@ -31,7 +31,7 @@ function ModelResultsPage() {
             </tr>
           </thead>
           <tbody>
-            {comparison.map((row) => (
+            {comparison.map((row: typeof comparison[0]) => (
               <tr key={row.metric} className="border-t border-border/30">
                 <td className="p-4 text-sm font-bold">{row.metric}</td>
                 <td className="p-4 text-sm text-muted-foreground">{row.baseline}</td>
@@ -57,7 +57,7 @@ function ModelResultsPage() {
             </div>
           </div>
           <div className="space-y-4">
-            {featureImportance.map((f) => (
+            {featureImportance.map((f: typeof featureImportance[0]) => (
               <div key={f.name}>
                 <div className="flex items-center justify-between text-sm mb-1">
                   <span className="font-medium">{f.name}</span>
@@ -73,7 +73,7 @@ function ModelResultsPage() {
 
         <div className="bg-card rounded-xl p-6 space-y-4">
           <h3 className="text-lg font-bold font-display">Tier Performance MAE</h3>
-          {tiers.map((tier) => (
+          {tiers.map((tier: typeof tiers[0]) => (
             <div key={tier.id} className="flex items-center gap-4 bg-accent rounded-xl p-4">
               <div className={`h-10 w-10 rounded-lg flex items-center justify-center text-sm font-bold ${
                 tier.id === "P1" ? "bg-teal/20 text-teal" :
@@ -134,7 +134,7 @@ function ModelResultsPage() {
 
       {/* Bottom Stats */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-        {bottomStats.map((stat) => (
+        {bottomStats.map((stat: typeof bottomStats[0]) => (
           <div key={stat.label} className="bg-card rounded-xl p-4">
             <span className="text-[10px] font-bold tracking-widest text-muted-foreground uppercase">{stat.label}</span>
             <div className={`text-2xl font-extrabold font-display mt-1 ${stat.highlight ? "text-teal" : ""}`}>{stat.value}</div>
